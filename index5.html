@@ -9,22 +9,22 @@
 
 <style>
   .about-section {
-  padding: 50px 0;
-}
-.about-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-.about-section img {
-  border-radius: 50%; /* Makes the image round */
-  max-width: 100%; /* Ensures the image is responsive */
-  height: auto; /* Maintains aspect ratio */
-}
-.about-section p {
-  color: #333;
-}
-
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
 
   /* Additional CSS for Projects Section */
 .projects-section h2 {
@@ -159,21 +159,14 @@ html {
 <section id='about' class="about-section">
   <div class="container">
     <h2>About</h2>
-    <div class="row align-items-center">
-      <div class="col-md-4 text-center">
-        <img src="images/about/may.jpg" alt="About Me" class="img-fluid">
-      </div>
-      <div class="col-md-8">
-        <p>I am Abigael, a passionate data analyst and researcher with a wide range of experience in Market and Social research. I have a strong background in Economics and Statistics and am passionate about working with organizations that want to make effective use of their data. I offer end-to-end project cycle support; from data sourcing, cleaning, analysis, visualization, all the way to providing insightful presentations. I will support each step of the process to enable your organization in making evidence-driven decisions.</p>
-        <p>I can do quantitative and qualitative analysis as well as predictive analysis and data visualization.</p>
-        <p>I am available for short-term projects and part-time longer-term engagements.</p>
-        <p>Tools capabilities: <strong>SPSS, R, Python, Stata, Excel</strong> and <strong>Tableau</strong>.</p>
-        <a href="https://drive.google.com/file/d/1Jk2A_RIJ0P5-TMi_YFvh1Xm3liKatdU6/view?usp=sharing" class="btn btn-secondary" target="_blank">My CV</a>
-      </div>
-    </div>
+    <img src="images/about/may.jpg" alt="About Me">
+    <p>I am Abigael, a passionate data analyst and researcher with wide-range of experience in Market and Social research. I have strong background in Economics and Statistics and passionate about working with organisations that want to make effective use of their data. I offer end-to-end project cycle support; from data sourcing, cleaning, analysis, visualization, all the way to providing insightful presentations. I will support each step of the process to enable your organisation in making evidence-driven decisions.</p>
+    <p>I can do quantitative and qualitative analysis as well as predictive analysis and data visualization.</p>
+    <p>I am available for short-term projects and part-time longer-term engagements.</p>
+    <p>Tools capabilities: <strong>SPSS, R, Python, Stata, Excel</strong> and <strong>Tableau </strong>.</p>
+    <a href="https://drive.google.com/file/d/1Jk2A_RIJ0P5-TMi_YFvh1Xm3liKatdU6/view?usp=sharing" class="btn btn-secondary"target="_blank">My CV</a>
   </div>
 </section>
-
 
 
 <!-- Projects Section -->
@@ -199,8 +192,8 @@ html {
           <div class="card">
             <img src="images/projects/Data Analysis Background.png" class="card-img-top" alt="Data Analysis">
             <div class="card-body">
-              <h5 class="card-title">Sales Funnel Analysis</h5>
-              <p class="card-text">I did an extensive analysis to optimize the sales funnel for a Webshop. The webshop wanted to know when people drop out during the ordering process and whether a distinction could be made between different types of customers. From the anasysis, the insight was when sales funnel is optimized , turnover can potentially increase by 5.8%.</p>
+              <h5 class="card-title">Data Analysis</h5>
+              <p class="card-text">Often, companies have data that contain a lot of hidden information. Asking the right questions and analyzing the data will give you relevant insights. The goal is to answer the right questions that will help the company to make the right decisions. The case below is an example of sales analysis whereby I was trying to understand the customer journey from point of entry to point of shopping/drop out.</p>
               <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FData%2520AnalysisV1.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Data Analysis Project</a>
             </div>
           </div>
@@ -212,8 +205,8 @@ html {
           <div class="card">
             <img src="images/projects/Analytics background.png" class="card-img-top" alt="Data Analytics">
             <div class="card-body">
-              <h5 class="card-title">Customer Churn Prediction</h5>
-              <p class="card-text"> This model uses selected characteristics, the CLV and expected lifetime. Each element is weighted such that the accuracy of churning is maximized. After developing the model, the model is applied to all customers such that we obtain the likelihood of churning for each customer. Ranking the results gives you the top X customers who are about to churn.</p>
+              <h5 class="card-title">Data Analytics</h5>
+              <p class="card-text">Data analytics distinguishes itself from data analysis because it tells you what to do and what the result will be. It makes predictions and tells you what the result would be by taking a certain action. In other words: data analysis focuses on the past and current situation, data analytics focuses on the future. The case below is an example how to predict churn for recurring customers within an electricity company.</p>
               <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FDATA%2520ANALYTICS-Documentv2.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Data Analytics project</a>
             </div>
           </div>
@@ -224,7 +217,7 @@ html {
             <img src="images/projects/Dash.png" class="card-img-top" alt="Data Visualization">
             <div class="card-body">
               <h5 class="card-title">Data Visualization</h5>
-              <p class="card-text">The dashboard above is an example focusing on economic outlook in Kenya 2019. The dashboard focussed specifically on the economic activities at County and subcounty level. Usually, the first page of a dashboard contains the most important KPI’s. You can navigate through the dashboard using the menu on the left.</p>
+              <p class="card-text">The dashboard below is an example focusing on economic outlook in Kenya 2019. The dashboard focussed specifically on the economic activities at County and subcounty level. Usually, the first page of a dashboard contains the most important KPI’s. You can navigate through the dashboard using the menu on the left.</p>
               <a href="https://public.tableau.com/app/profile/abigael3872/viz/KENYAN2019ECONOMICOUTLOOKDASHBOARD/2019EconomicActivityinKenya?publish=yes" class="btn btn-primary" target="_blank">View dashboard</a>
               <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FDashboard-documentv3.docx&wdOrigin=BROWSELINK" class="btn btn-secondary" target="_blank">Dashboard Goal & Duration</a>
             </div>
