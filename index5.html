@@ -9,22 +9,22 @@
 
 <style>
   .about-section {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .about-section img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px;
-    border-radius: 50%; /* Makes the image round */
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    color: #333;
-  }
+  padding: 50px 0;
+}
+.about-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about-section img {
+  border-radius: 50%; /* Makes the image round */
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+.about-section p {
+  color: #333;
+}
+
 
   /* Additional CSS for Projects Section */
 .projects-section h2 {
@@ -159,14 +159,21 @@ html {
 <section id='about' class="about-section">
   <div class="container">
     <h2>About</h2>
-    <img src="images/about/may.jpg" alt="About Me">
-    <p>I am Abigael, a pationate data analyst and researcher with wide-range of experience in Market and Social research. I have strong background in Economics and Statistics and passionate about working with organisations that want to make effective use of their data. I offer end-to-end project cycle support; from data sourcing, cleaning, analysis, visualization, all the way to providing insightful presentations. I will support each step of the process to enable your organisation in making evidence-driven decisions.</p>
-    <p>I can do quantitative and qualitative analysis as well as predictive analysis and data visualisation..</p>
-    <p>I am available for short-term projects and part-time longer-term engagements.</p>
-    <p>Tools capabilities: <strong>SPSS, R, Python, Stata, Excel</strong> and <strong>Tableau </strong>.</p>
-    <a href="https://drive.google.com/file/d/1Jk2A_RIJ0P5-TMi_YFvh1Xm3liKatdU6/view?usp=sharing" class="btn btn-secondary"target="_blank">My CV</a>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="images/about/may.jpg" alt="About Me" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <p>I am Abigael, a passionate data analyst and researcher with a wide range of experience in Market and Social research. I have a strong background in Economics and Statistics and am passionate about working with organizations that want to make effective use of their data. I offer end-to-end project cycle support; from data sourcing, cleaning, analysis, visualization, all the way to providing insightful presentations. I will support each step of the process to enable your organization in making evidence-driven decisions.</p>
+        <p>I can do quantitative and qualitative analysis as well as predictive analysis and data visualization.</p>
+        <p>I am available for short-term projects and part-time longer-term engagements.</p>
+        <p>Tools capabilities: <strong>SPSS, R, Python, Stata, Excel</strong> and <strong>Tableau</strong>.</p>
+        <a href="https://drive.google.com/file/d/1Jk2A_RIJ0P5-TMi_YFvh1Xm3liKatdU6/view?usp=sharing" class="btn btn-secondary" target="_blank">My CV</a>
+      </div>
+    </div>
   </div>
 </section>
+
 
 
 <!-- Projects Section -->
