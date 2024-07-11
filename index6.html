@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  width: 1000px; /* Adjust this value to fit the image properly in the card */
+  height: 800px;
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Services Section */
+.Services-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.Services-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.Services-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.Services-section .card-body {
+  padding: 15px;
+}
+.Services-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.Services-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.Services-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body {
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+    <!-- Home Section -->
+    <section id='home' class="home-section">
+        <div class="container text-center">
+          <h1><strong><span style="color: blue;">Abigael Cherotich</span></strong></h1>
+          <h3>Research and Data Analytics Professional</h3>
+          <p>Explore my work and Services</p>
+        </div>
+    </section>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/may.jpg" alt="About Me">
+    <p>I am Abigael, a pationate data analyst and researcher with wide-range of experience in Market and Social research. I have strong background in Economics and Statistics and passionate about working with organisations that want to make effective use of their data. I offer end-to-end project cycle support; from data sourcing, cleaning, analysis, visualization, all the way to providing insightful presentations. I will support each step of the process to enable your organisation in making evidence-driven decisions.</p>
+    <p>I can do quantitative and qualitative analysis as well as predictive analysis and data visualisation..</p>
+    <p>I am available for short-term projects and part-time longer-term engagements.</p>
+    <p>Tools capabilities: <strong>SPSS, R, Python, Stata, Excel</strong> and <strong>Tableau </strong>.</p>
+    <a href="https://drive.google.com/file/d/1Jk2A_RIJ0P5-TMi_YFvh1Xm3liKatdU6/view?usp=sharing" class="btn btn-secondary"target="_blank">My CV</a>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+           <!-- Project 1 -->
+           <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="images/projects/clustering.png" class="card-img-top custom-image" alt="Customer segmentation & clustering">
+              <div class="card-body">
+                <h5 class="card-title">Customer segmentation & clustering</h5>
+                <p class="card-text">Implemented K-means clustering methodology to partition the customer base of mall clients according to demographic variables including age, gender, income, and expenditure patterns. Employed segmentation strategies to tailor marketing initiatives and mall amenities for enhanced customer satisfaction and accelerated business expansion, aligning services with the distinctive preferences and behaviors of each identified segment.</p>
+                <a href="https://github.com/AbigaelCherotich/Abigael-Cherotich-Portfolio/blob/main/Segmentation%20%26%20clustering.ipynb" class="btn btn-secondary" target="_blank">View code</a>
+                <a href="https://drive.google.com/file/d/1n-sAtXamsv2T02rUsMUkKd2eRTNn19Hb/view?usp=sharing" class="btn btn-primary" target="_blank">View clustering report</a>
+              </div>
+            </div>
+          </div>
+           
+      <!-- Project 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/Data Analysis Background.png" class="card-img-top" alt="Data Analysis">
+            <div class="card-body">
+              <h5 class="card-title">Sales Funnel Analysis</h5>
+              <p class="card-text">Idid an extensive analysis to optimize the sales funnel for a Webshop. The webshop wanted to know when people drop out during the ordering process and whether a distinction could be made between different types of customers. From the anasysis, the insight was when sales funnel is optimized , turnover can potentially increase by 5.8%.</p>
+              <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FData%2520AnalysisV1.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Data Analysis Project</a>
+            </div>
+          </div>
+        </div>
+     </div> 
+      <div class="row">
+        <!-- Project 3 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/Analytics background.png" class="card-img-top" alt="Data Analytics">
+            <div class="card-body">
+              <h5 class="card-title">Customer Churn Prediction</h5>
+              <p class="card-text"> This model uses selected characteristics, the CLV, and behavioral patterns of all historical customers (including churned customers). Logistic regression and decision tree models were used. From the analysis a number of key insights that were uncovered; (i) no automatic renewal contract had the highest positive relationship with customer churn (ii) 23% of customers with an expired contract renewed and stayed with the company, and (iii) early CLV was not found to be important in predicting customer churn. Key results were used to improve the customer experience.</p>
+              <a href="https://github.com/AbigaelCherotich/Abigael-Cherotich-Portfolio/blob/main/Customer%20churn%20prediction.ipynb" class="btn btn-secondary" target="_blank">View Code</a>
+              <a href="https://drive.google.com/file/d/1__8c5KtJq6ci6EOkgAMhx4FGukPHfQLc/view?usp=sharing" class="btn btn-primary" target="_blank">View report</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/dashboard.png" class="card-img-top" alt="Data Visualization">
+            <div class="card-body">
+              <h5 class="card-title">Employee Retention Analysis</h5>
+              <p class="card-text">Developed a detailed retention analysis using historical employee data. The analysis identified factors influencing employee retention and turnover, providing actionable insights for HR strategies. Key findings helped in creating targeted interventions to improve employee satisfaction and reduce turnover rates.</p>
+              <a href="https://github.com/AbigaelCherotich/Abigael-Cherotich-Portfolio/blob/main/Employee%20Retention%20Analysis.ipynb" class="btn btn-secondary" target="_blank">View Code</a>
+              <a href="https://drive.google.com/file/d/1__8c5KtJq6ci6EOkgAMhx4FGukPHfQLc/view?usp=sharing" class="btn btn-primary" target="_blank">View Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="services" class="Services-section">
+  <div class="container">
+    <h2 class="text-center">Services</h2>
+    <div class="row">
+      <!-- Service 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/services/analysis.jpg" class="card-img-top" alt="Data Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Data Analysis</h5>
+            <p class="card-text">Offering comprehensive data analysis services to turn raw data into actionable insights. Specialized in both quantitative and qualitative analysis.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Service 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/services/visualization.jpg" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">Creating intuitive and impactful data visualizations to help stakeholders understand complex data easily using tools like Tableau and PowerBI.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Service 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/services/research.jpg" class="card-img-top" alt="Research">
+          <div class="card-body">
+            <h5 class="card-title">Research</h5>
+            <p class="card-text">Conducting thorough research and providing detailed reports on various topics to support decision-making and strategy formulation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section bg-dark text-white">
+  <div class="container text-center">
+    <h2>Contact</h2>
+    <p>Get in touch with me through the following platforms:</p>
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <a href="mailto:abigaelcherotich@example.com" class="d-block mb-3">
+          <img src="images/social-icons/email.png" class="social-icon" alt="Email">
+        </a>
+      </div>
+      <div class="col-md-2">
+        <a href="https://linkedin.com/in/abigaelcherotich" target="_blank" class="d-block mb-3">
+          <img src="images/social-icons/linkedin.png" class="social-icon" alt="LinkedIn">
+        </a>
+      </div>
+      <div class="col-md-2">
+        <a href="https://github.com/AbigaelCherotich" target="_blank" class="d-block mb-3">
+          <img src="images/social-icons/github.png" class="social-icon" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
