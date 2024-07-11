@@ -9,18 +9,17 @@
 
 <style>
   .about-section {
-    text-align: center;
     padding: 50px 0;
   }
   .about-section h2 {
+    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
   .about-section img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px;
     border-radius: 50%; /* Makes the image round */
-    margin-bottom: 20px;
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
   }
   .about-section p {
     color: #333;
@@ -35,8 +34,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
 }
 .card-img-top {
-  width: 1000px; /* Adjust this value to fit the image properly in the card */
-  height: 800px;
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
   object-fit: cover; /* This makes sure the image covers the area properly */
 }
 .card-body {
@@ -159,109 +157,125 @@ html {
 <section id='about' class="about-section">
   <div class="container">
     <h2>About</h2>
-    <img src="images/about/may.jpg" alt="About Me">
-    <p>I am Abigael, a pationate data analyst and researcher with wide-range of experience in Market and Social research. I have strong background in Economics and Statistics and passionate about working with organisations that want to make effective use of their data. I offer end-to-end project cycle support; from data sourcing, cleaning, analysis, visualization, all the way to providing insightful presentations. I will support each step of the process to enable your organisation in making evidence-driven decisions.</p>
-    <p>I can do quantitative and qualitative analysis as well as predictive analysis and data visualisation..</p>
-    <p>I am available for short-term projects and part-time longer-term engagements.</p>
-    <p>Tools capabilities: <strong>SPSS, R, Python, Stata, Excel</strong> and <strong>Tableau </strong>.</p>
-    <a href="https://drive.google.com/file/d/1Jk2A_RIJ0P5-TMi_YFvh1Xm3liKatdU6/view?usp=sharing" class="btn btn-secondary"target="_blank">My CV</a>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="images/about/may.jpg" alt="About Me" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <p>I am Abigael, a passionate data analyst and researcher with a wide range of experience in Market and Social research. I have a strong background in Economics and Statistics and am passionate about working with organizations that want to make effective use of their data. I offer end-to-end project cycle support; from data sourcing, cleaning, analysis, visualization, all the way to providing insightful presentations. I will support each step of the process to enable your organization in making evidence-driven decisions.</p>
+        <p>I can do quantitative and qualitative analysis as well as predictive analysis and data visualization.</p>
+        <p>I am available for short-term projects and part-time longer-term engagements.</p>
+        <p>Tools capabilities: <strong>SPSS, R, Python, Stata, Excel</strong> and <strong>Tableau</strong>.</p>
+        <a href="https://drive.google.com/file/d/1Jk2A_RIJ0P5-TMi_YFvh1Xm3liKatdU6/view?usp=sharing" class="btn btn-secondary" target="_blank">My CV</a>
+      </div>
+    </div>
   </div>
 </section>
 
-
 <!-- Projects Section -->
-<section id="projects" class="projects-section bg-light" id="projects">
-    <div class="container">
-      <h2 class="text-center">Projects</h2>
-      <div class="row">
-           <!-- Project 1 -->
-           <div class="col-md-6 mb-4">
-            <div class="card">
-              <img src="images/projects/clustering.png" class="card-img-top custom-image" alt="Customer segmentation & clustering">
-              <div class="card-body">
-                <h5 class="card-title">Customer segmentation & clustering</h5>
-                <p class="card-text">Implemented K-means clustering methodology to partition the customer base of mall clients according to demographic variables including age, gender, income, and expenditure patterns. Employed segmentation strategies to tailor marketing initiatives and mall amenities for enhanced customer satisfaction and accelerated business expansion, aligning services with the distinctive preferences and behaviors of each identified segment.</p>
-                <a href="https://github.com/AbigaelCherotich/Abigael-Cherotich-Portfolio/blob/main/Segmentation%20%26%20clustering.ipynb" class="btn btn-secondary" target="_blank">View code</a>
-                <a href="https://drive.google.com/file/d/1n-sAtXamsv2T02rUsMUkKd2eRTNn19Hb/view?usp=sharing" class="btn btn-primary" target="_blank">View clustering report</a>
-              </div>
-            </div>
+<section id="projects" class="projects-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="images/projects/clustering.png" class="card-img-top custom-image" alt="Customer segmentation & clustering">
+          <div class="card-body">
+            <h5 class="card-title">Customer segmentation & clustering</h5>
+            <p class="card-text">Implemented K-means clustering methodology to partition the customer base of mall clients according to demographic variables including age, gender, income, and expenditure patterns. Employed segmentation strategies to tailor marketing initiatives and mall amenities for enhanced customer satisfaction and accelerated business expansion, aligning services with the distinctive preferences and behaviors of each identified segment.</p>
+            <a href="https://github.com/AbigaelCherotich/Abigael-Cherotich-Portfolio/blob/main/Segmentation%20%26%20clustering.ipynb" class="btn btn-secondary" target="_blank">View code</a>
+            <a href="https://drive.google.com/file/d/1n-sAtXamsv2T02rUsMUkKd2eRTNn19Hb/view?usp=sharing" class="btn btn-primary" target="_blank">View clustering report</a>
           </div>
-           
+        </div>
+      </div>
       <!-- Project 2 -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="images/projects/Data Analysis Background.png" class="card-img-top" alt="Data Analysis">
-            <div class="card-body">
-              <h5 class="card-title">Sales Funnel Analysis</h5>
-              <p class="card-text">Idid an extensive analysis to optimize the sales funnel for a Webshop. The webshop wanted to know when people drop out during the ordering process and whether a distinction could be made between different types of customers. From the anasysis, the insight was when sales funnel is optimized , turnover can potentially increase by 5.8%.</p>
-              <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FData%2520AnalysisV1.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Data Analysis Project</a>
-            </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="images/projects/Data Analysis Background.png" class="card-img-top" alt="Data Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Sales Funnel Analysis</h5>
+            <p class="card-text">I did an extensive analysis to optimize the sales funnel for a Webshop. The webshop wanted to know when people drop out during the ordering process and whether a distinction could be made between different types of customers. From the anasysis, the insight was when sales funnel is optimized , turnover can potentially increase by 5.8%.</p>
+            <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FData%2520AnalysisV1.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Data Analysis Project</a>
           </div>
         </div>
-     </div> 
-      <div class="row">
-        <!-- Project 3 -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="images/projects/Analytics background.png" class="card-img-top" alt="Data Analytics">
-            <div class="card-body">
-              <h5 class="card-title">Customer Churn Prediction</h5>
-              <p class="card-text"> This model uses selected characteristics, the CLV, and behavioral patterns of all historical customers (including churned customers). Logistic regression and decision tree models were used. From the analysis a number of key insights that were uncovered; (i) no automatic renewal contract had the highest positive relationship with customer churn (ii) 23% of customers with an expired contract renewed and stayed with the company, and (iii) early CLV was not found to be important in predicting customer churn. Key results were used to improve the customer experience.</p>
-              <a href="https://github.com/AbigaelCherotich/Abigael-Cherotich-Portfolio/blob/main/Customer%20churn%20prediction.ipynb" class="btn btn-secondary" target="_blank">View Code</a>
-              <a href="https://drive.google.com/file/d/1__8c5KtJq6ci6EOkgAMhx4FGukPHfQLc/view?usp=sharing" class="btn btn-primary" target="_blank">View report</a>
-            </div>
+      </div>
+    </div> 
+    <div class="row">
+      <!-- Project 3 -->
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="images/projects/Analytics background.png" class="card-img-top" alt="Data Analytics">
+          <div class="card-body">
+            <h5 class="card-title">Retention Analysis</h5>
+            <p class="card-text">Conducted analysis to determine factors influencing customer retention for an E-commerce company. The analysis involved examining customer behavior, purchase history, and engagement metrics to identify patterns and trends that contribute to customer loyalty. Developed actionable strategies to improve retention rates and enhance customer lifetime value.</p>
+            <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FRetention%2520Analysis.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Retention Analysis Project</a>
           </div>
         </div>
-
-        <!-- Project 4 -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="images/projects/dashboard.png" class="card-img-top" alt="Data Visualization">
-            <div class="card-body">
-              <h5 class="card-title">Employee Retention Analysis</h5>
-              <p class="card-text">Developed a detailed retention analysis using historical employee data. The analysis identified factors influencing employee retention and turnover, providing actionable insights for HR strategies. Key findings helped in creating targeted interventions to improve employee satisfaction and reduce turnover rates.</p>
-              <a href="https://github.com/AbigaelCherotich/Abigael-Cherotich-Portfolio/blob/main/Employee%20Retention%20Analysis.ipynb" class="btn btn-secondary" target="_blank">View Code</a>
-              <a href="https://drive.google.com/file/d/1__8c5KtJq6ci6EOkgAMhx4FGukPHfQLc/view?usp=sharing" class="btn btn-primary" target="_blank">View Report</a>
-            </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="images/projects/Data Analysis Software.png" class="card-img-top" alt="Data Analysis Software">
+          <div class="card-body">
+            <h5 class="card-title">Sentiment Analysis</h5>
+            <p class="card-text">I performed sentiment analysis on customer reviews for a leading online retailer. The project involved scraping and analyzing large volumes of text data to determine customer sentiment towards various products. This analysis helped the retailer to understand customer preferences, improve product offerings, and tailor marketing strategies to better meet customer needs.</p>
+            <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FSentiment%2520Analysis.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Sentiment Analysis Project</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- Services Section -->
 <section id="services" class="Services-section">
   <div class="container">
     <h2 class="text-center">Services</h2>
     <div class="row">
       <!-- Service 1 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-6 mb-4">
         <div class="card h-100">
-          <img src="images/services/analysis.jpg" class="card-img-top" alt="Data Analysis">
+          <img src="images/services/service1.png" class="card-img-top" alt="Service 1">
           <div class="card-body">
-            <h5 class="card-title">Data Analysis</h5>
-            <p class="card-text">Offering comprehensive data analysis services to turn raw data into actionable insights. Specialized in both quantitative and qualitative analysis.</p>
+            <h5 class="card-title">Quantitative Analysis</h5>
+            <p class="card-text">Utilizing statistical methods and software such as SPSS, R, and Python to analyze numerical data and uncover patterns, trends, and relationships that inform decision-making processes.</p>
+            <a href="services.html#quantitative-analysis" class="btn btn-outline-primary">Learn More</a>
           </div>
         </div>
       </div>
-      
       <!-- Service 2 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-6 mb-4">
         <div class="card h-100">
-          <img src="images/services/visualization.jpg" class="card-img-top" alt="Data Visualization">
+          <img src="images/services/service2.png" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">Qualitative Analysis</h5>
+            <p class="card-text">Conducting in-depth analysis of non-numerical data such as interviews, open-ended survey responses, and focus groups to derive insights into attitudes, behaviors, and motivations.</p>
+            <a href="services.html#qualitative-analysis" class="btn btn-outline-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Service 3 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/services/service3.png" class="card-img-top" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title">Predictive Analysis</h5>
+            <p class="card-text">Applying advanced statistical techniques and machine learning algorithms to historical data to make predictions about future outcomes and trends.</p>
+            <a href="services.html#predictive-analysis" class="btn btn-outline-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Service 4 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/services/service4.png" class="card-img-top" alt="Service 4">
           <div class="card-body">
             <h5 class="card-title">Data Visualization</h5>
-            <p class="card-text">Creating intuitive and impactful data visualizations to help stakeholders understand complex data easily using tools like Tableau and PowerBI.</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Service 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="images/services/research.jpg" class="card-img-top" alt="Research">
-          <div class="card-body">
-            <h5 class="card-title">Research</h5>
-            <p class="card-text">Conducting thorough research and providing detailed reports on various topics to support decision-making and strategy formulation.</p>
+            <p class="card-text">Creating compelling visual representations of data using tools like Tableau, Power BI, and Excel to help stakeholders quickly grasp complex information and make informed decisions.</p>
+            <a href="services.html#data-visualization" class="btn btn-outline-primary">Learn More</a>
           </div>
         </div>
       </div>
@@ -271,33 +285,35 @@ html {
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section bg-dark text-white">
-  <div class="container text-center">
-    <h2>Contact</h2>
-    <p>Get in touch with me through the following platforms:</p>
+  <div class="container">
+    <h2 class="text-center">Contact</h2>
+    <p class="text-center">Let's work together on your next data project!</p>
     <div class="row justify-content-center">
-      <div class="col-md-2">
-        <a href="mailto:abigaelcherotich@example.com" class="d-block mb-3">
-          <img src="images/social-icons/email.png" class="social-icon" alt="Email">
+      <div class="col-md-4 text-center">
+        <a href="https://github.com/AbigaelCherotich" target="_blank">
+          <img src="images/contact/github.png" alt="GitHub Icon" class="social-icon">
+          <p>GitHub</p>
         </a>
       </div>
-      <div class="col-md-2">
-        <a href="https://linkedin.com/in/abigaelcherotich" target="_blank" class="d-block mb-3">
-          <img src="images/social-icons/linkedin.png" class="social-icon" alt="LinkedIn">
+      <div class="col-md-4 text-center">
+        <a href="https://www.linkedin.com/in/abigael-cherotich-861299109" target="_blank">
+          <img src="images/contact/linkedin.png" alt="LinkedIn Icon" class="social-icon">
+          <p>LinkedIn</p>
         </a>
       </div>
-      <div class="col-md-2">
-        <a href="https://github.com/AbigaelCherotich" target="_blank" class="d-block mb-3">
-          <img src="images/social-icons/github.png" class="social-icon" alt="GitHub">
+      <div class="col-md-4 text-center">
+        <a href="mailto:abigaelcherotichm@gmail.com" target="_blank">
+          <img src="images/contact/email.png" alt="Email Icon" class="social-icon">
+          <p>Email</p>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
